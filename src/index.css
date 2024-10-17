@@ -110,3 +110,25 @@ html{
                  0 0 30px rgba(23, 23, 23, 0.6);
   }
 }
+
+.about-header-section p{
+  font-size: 3vw;
+  line-height: 3vw;
+  white-space: nowrap;
+}
+
+.tech{
+  background-image: url("./assets/grid.svg");
+}
+
+.tech p{
+  font-size: 3vw;
+  line-height: 3vw;
+}
+
+.svg-icon {
+  width: 100%;    /* Fit the width of the parent container */
+  height: auto;   /* Maintain aspect ratio */
+  max-width: 100%;  /* Ensure it doesn't overflow */
+  object-fit: contain;  /* Preserve aspect ratio */
+}
