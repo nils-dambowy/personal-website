@@ -63,7 +63,7 @@ export default function About() {
                         <p>Technical</p>
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_72_7084)"><g clipPath="url(#clip1_72_7084)"><path d="M350 151.576H231.552L315.306 67.821L282.179 34.6936L198.424 118.448V0H151.576V118.448L67.821 34.6936L34.6936 67.821L118.446 151.576H0V198.427H118.446L34.6936 282.179L67.821 315.309L151.576 231.554V350H198.424V231.554L282.179 315.309L315.306 282.179L231.552 198.427H350V151.576Z" fill="currentColor"></path></g></g><defs><clipPath id="clip0_72_7084"><rect width="350" height="175" fill="white"></rect></clipPath><clipPath id="clip1_72_7084"><rect width="350" height="350" fill="white"></rect></clipPath></defs> </svg>
                     </div>
-                    <div className="border-black border-r-2 border-t-2 border-b-2 w-96 bg-white text-center">
+                    <div className="flex border-black border-r-2 border-t-2 border-b-2 w-96 bg-white justify-center items-center text-center">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestias repellat dolorum voluptate. Nisi, iure. A perferendis deserunt aperiam, eos illo quisquam tempora iure id, architecto, eius placeat temporibus mollitia.
                     </div>
                 </div>
@@ -75,7 +75,7 @@ export default function About() {
                         <p>Technical</p>
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_72_7084)"><g clipPath="url(#clip1_72_7084)"><path d="M350 151.576H231.552L315.306 67.821L282.179 34.6936L198.424 118.448V0H151.576V118.448L67.821 34.6936L34.6936 67.821L118.446 151.576H0V198.427H118.446L34.6936 282.179L67.821 315.309L151.576 231.554V350H198.424V231.554L282.179 315.309L315.306 282.179L231.552 198.427H350V151.576Z" fill="currentColor"></path></g></g><defs><clipPath id="clip0_72_7084"><rect width="350" height="175" fill="white"></rect></clipPath><clipPath id="clip1_72_7084"><rect width="350" height="350" fill="white"></rect></clipPath></defs> </svg>
                     </div>
-                    <div className="border-black border-r-2 border-t-2 border-b-2 w-96 bg-white text-center">
+                    <div className="flex border-black border-r-2 border-t-2 border-b-2 w-96 bg-white justify-center items-center text-center">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestias repellat dolorum voluptate. Nisi, iure. A perferendis deserunt aperiam, eos illo quisquam tempora iure id, architecto, eius placeat temporibus mollitia.
                     </div>
                 </div>
@@ -86,7 +86,7 @@ export default function About() {
                         <p>Soft</p>
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#clip0_72_7084)"><g clipPath="url(#clip1_72_7084)"><path d="M350 151.576H231.552L315.306 67.821L282.179 34.6936L198.424 118.448V0H151.576V118.448L67.821 34.6936L34.6936 67.821L118.446 151.576H0V198.427H118.446L34.6936 282.179L67.821 315.309L151.576 231.554V350H198.424V231.554L282.179 315.309L315.306 282.179L231.552 198.427H350V151.576Z" fill="currentColor"></path></g></g><defs><clipPath id="clip0_72_7084"><rect width="350" height="175" fill="white"></rect></clipPath><clipPath id="clip1_72_7084"><rect width="350" height="350" fill="white"></rect></clipPath></defs> </svg>
                     </div>
-                    <div className="border-black border-r-2 border-t-2 border-b-2 w-96 bg-white text-center">
+                    <div className=" flex border-black border-r-2 border-t-2 border-b-2 w-96 bg-white justify-center items-center text-center">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam molestias repellat dolorum voluptate. Nisi, iure. A perferendis deserunt aperiam, eos illo quisquam tempora iure id, architecto, eius placeat temporibus mollitia.
                     </div>
                 </div>
