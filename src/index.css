@@ -25,7 +25,7 @@ html{
   background-repeat: repeat-y;
   background-position: top -8px left -16px;
   background-attachment: fixed;
-  animation: glow 1s infinite alternate;
+  /*animation: glow 1s infinite alternate;*/
   height: 88.5vh;
 }
 
@@ -38,6 +38,7 @@ html{
   box-shadow: 3px 3px 0px #000000;
 }
 
+/*
 .profile h1:hover{
   animation: hover_glow 1s infinite alternate;
 }
@@ -45,7 +46,7 @@ html{
 .profile p:hover{
   animation: hover_glow 1s infinite alternate;
 }
-
+*/
 .footer-icons{
   background-color: rgb(255, 194, 41);
   width: 48px;
