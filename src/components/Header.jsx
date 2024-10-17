@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-      <header className="w-full h-20 bg-white flex items-center justify-between border-solid border-b-2 border-black sticky">
+      <header className="w-full h-20 bg-white flex items-center justify-between border-solid border-b-2 border-black sticky top-0 ">
           
           <div className="flex items-center justify-center border-r-2 border-black w-1/4 h-20 text-5xl border-l-2">
               <a href="/">nd</a>
