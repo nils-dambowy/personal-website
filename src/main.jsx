@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 import About from "./components/About.jsx"
-import Contact from "./components/contact.jsx"
+import Contact from "./components/Contact.jsx"
 import Work from "./components/Work.jsx"
 
 import {
