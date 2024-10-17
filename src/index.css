@@ -26,6 +26,7 @@ html{
   background-position: top -8px left -16px;
   background-attachment: fixed;
   animation: glow 1s infinite alternate;
+  height: 88.5vh;
 }
 
 .header-icons{
