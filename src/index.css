@@ -4,6 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media only screen and (min-width: 1920px) and (max-width: 2560px) {
+
+  .profile {
+    background-image: url("./assets/plus.svg");
+    background-repeat: repeat-y;
+    background-position: top 0px left -16px;
+    background-attachment: fixed;
+    height: 87.5vh;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+  .profile {
+    background-image: url("./assets/plus.svg");
+    background-repeat: repeat-y;
+    background-position: top 0px left -16px;
+    background-attachment: fixed;
+    height: 83vh;
+  }
+}
+
+
 body {
   font-family: "Bricolage Grotesque";
 }
@@ -19,15 +43,6 @@ html{
   border-top: 2px solid black;
   margin: 0 auto;
   }
-
-.profile{
-  background-image: url("./assets/plus.svg");
-  background-repeat: repeat-y;
-  background-position: top -8px left -16px;
-  background-attachment: fixed;
-  /*animation: glow 1s infinite alternate;*/
-  height: 88.5vh;
-}
 
 .header-icons{
   background-color: rgb(255, 194, 41);
