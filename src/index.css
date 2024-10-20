@@ -168,11 +168,26 @@ html{
   [class*="col-"] {
     width: 100%;
   }
+  .profile {
+    background-image: url("./assets/plus.svg");
+    background-repeat: repeat-y;
+    background-position: top 0px left -16px;
+    background-attachment: fixed;
+    height: 84vh;
+    width: 25%;
+  }
+  .profile section{
+    display: block;
+  }
 
-  html{
+  /* div with image and text*/
+  .profile section div {
+    display: block;
+    justify-content: right;
+  }
 
-    width: 100%;
-    height: 100%;
-    background-color: rgb(155, 194, 41)
+  .profile section div div{
+    text-align: right;
+    font-size: 12vw;
   }
 }

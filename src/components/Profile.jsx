@@ -5,9 +5,9 @@ export default function Profile() {
     return (
         <article className="flex profile">
             <section className="flex flex-col justify-center items-center flex-grow">
-                <div className="flex items-center"> 
-                    <img src={Potrait} alt="potrait" className="mr-4" width="300" height="300" />
-                    <div className="text-center">
+                <div className="flex items-center">
+                    <img src={Potrait} alt="potrait"width="300" height="300" />
+                    <div className="profile-container text-center">
                         <div className="text-7xl font-bold">
                             <motion.h1
                                 initial={{  y: 15 }}
