@@ -14,11 +14,11 @@ export default function Header() {
                 About
               </a>
 
-              <a href="/work" className=" border-r-2 border-black w-1/3 h-20 flex items-center justify-center">
+              <a href="/projects" className=" border-r-2 border-black w-1/3 h-20 flex items-center justify-center">
                 <div className="flex items-center justify-center header-icons mr-2">
                   <svg stroke="currentColor" fill="none" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
                 </div>
-                Work
+                Projects
               </a>
 
               <a href="/contact" className="border-r-2 border-black w-1/3 h-20 flex items-center justify-center">

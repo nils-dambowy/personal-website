@@ -147,3 +147,12 @@ html{
   max-width: 100%;  /* Ensure it doesn't overflow */
   object-fit: contain;  /* Preserve aspect ratio */
 }
+
+.work-grid-bg{
+  background-image: url("./assets/grid.svg");
+  background-position: top -8px right -16px;
+}
+
+.project-grid-item{
+  box-shadow: 5px 5px 0px #000000;
+}
