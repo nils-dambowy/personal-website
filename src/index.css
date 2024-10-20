@@ -156,3 +156,9 @@ html{
 .project-grid-item{
   box-shadow: 5px 5px 0px #000000;
 }
+
+.project-grid-item:hover{
+  box-shadow: 2px 2px 2px #000000;
+  transition-timing-function: linear;
+  transition-duration: 150ms
+}
