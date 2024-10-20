@@ -5,7 +5,7 @@ import './index.css'
 
 import About from "./components/About.jsx"
 import Contact from "./components/Contact.jsx"
-import Work from "./components/Work.jsx"
+import Projects from "./components/Projects.jsx"
 
 import {
   createBrowserRouter,
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
     element: <About/>,
   },
   {
-    path: "work",
-    element: <Work/>,
+    path: "projects",
+    element: <Projects/>,
   },
   {
     path: "contact",
