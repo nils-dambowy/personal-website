@@ -72,7 +72,7 @@ export default function About() {
 
             <div className="flex flex-col tech bg-white h-auto border-black border-t-2 items-center justify-center">
                 <div className="flex flex-row w-full justify-center">
-                    <div className="text-white flex bg-green-400 flex-col text-center border-black border-2 w-1/6">
+                    <div className="text-white flex bg-green-400 flex-col text-center border-black border-2 w-1/5">
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_72_7086)">
                                 <g clipPath="url(#clip1_72_7086)">
@@ -111,68 +111,73 @@ export default function About() {
                             </defs>
                         </svg>
                     </div>
-                    <div
-                        className="flex border-black border-r-2 border-t-2 border-b-2 w-2/6 bg-white justify-center items-center text-center">
-
-                        <div className="flex-col flex h-full pr-64">
+                    <div className="flex border-black border-r-2 border-t-2 border-b-2 w-3/6 bg-white justify-center items-center text-center">
+                        <div className="flex-col flex h-full lg:pr-64 pr-2">
                             <div className="flex-grow flex items-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text1
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text2
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text3
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text4
                             </div>
                         </div>
                         <div className="flex h-full flex-col">
                             <div className="flex-grow flex items-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text1
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text2
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text3
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text4
                             </div>
                         </div>
-
                     </div>
                 </div>
 
 
                 <div className="flex flex-row w-full justify-center">
-                    <div className="flex bg-blue-400 flex-col text-center border-black border-2  w-1/6">
+                    <div className="flex bg-blue-400 flex-col text-center border-black border-2  w-1/5">
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_72_7086)">
                                 <g clipPath="url(#clip1_72_7086)">
@@ -211,56 +216,63 @@ export default function About() {
                             </defs>
                         </svg>
                     </div>
-                    <div
-                        className="flex border-black border-r-2 border-t-2 border-b-2 w-2/6 bg-white justify-center items-center text-center">
-                        <div className="flex-col flex h-full pr-64">
+                    <div className="flex border-black border-r-2 border-t-2 border-b-2 w-3/6 bg-white justify-center items-center text-center">
+                        <div className="flex-col flex h-full lg:pr-64 pr-2">
                             <div className="flex-grow flex items-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text1
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text2
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text3
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text4
                             </div>
                         </div>
                         <div className="flex h-full flex-col">
                             <div className="flex-grow flex items-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text1
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text2
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text3
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text4
                             </div>
@@ -269,7 +281,7 @@ export default function About() {
                 </div>
 
                 <div className="flex flex-row w-full justify-center">
-                    <div className="text-white flex bg-green-400 flex-col text-center border-black border-2 w-1/6">
+                    <div className="text-white flex bg-green-400 flex-col text-center border-black border-2 w-1/5">
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_72_7086)">
                                 <g clipPath="url(#clip1_72_7086)">
@@ -308,56 +320,59 @@ export default function About() {
                             </defs>
                         </svg>
                     </div>
-                    <div
-                        className=" flex border-black border-r-2 border-t-2 border-b-2 w-2/6 bg-white justify-center items-center text-center">
-                        <div className="flex-col flex h-full pr-64">
+                    <div className=" flex border-black border-r-2 border-t-2 border-b-2 w-3/6 bg-white justify-center items-center text-center">
+                        <div className="flex-col flex h-full lg:pr-64 pr-2" >
                             <div className="flex-grow flex items-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text1
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                    <div className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text2
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text3
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text4
                             </div>
                         </div>
                         <div className="flex h-full flex-col">
                             <div className="flex-grow flex items-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text1
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text2
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text3
                             </div>
                             <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-5 h-5 bg-yellow-400 about-icons "></div>
+                                <div className="text-center pr-2">
+                                    <div
+                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
                                 Text4
                             </div>
