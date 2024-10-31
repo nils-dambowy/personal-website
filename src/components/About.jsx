@@ -7,7 +7,7 @@ export default function About() {
             <Header/>
             {/* header section */}
             <div
-                className="about-header-section flex flex-col sm:flex-row items-center bg-white h-auto sm:h-60 mt-1 border-black border-b-2">
+                className="about-header-section flex flex-col sm:flex-row items-center bg-white h-auto sm:h-60 mt-1 border-black border-b-2 border-t-2">
                 <div className="flex-grow flex items-center justify-center">
                     <div className="text-center lg:text-7xl sm:text-2xl">
                         <p className="bg-blue-700 text-white">nils dambowy</p>
