@@ -6,15 +6,15 @@ export default function About() {
         <>
             <Header />
             {/* header section */}
-            <div className="about-header-section flex flex-col md:flex-row items-center bg-white h-auto md:h-60 mt-1 border-black border-b-2">
+            <div className="about-header-section flex flex-col sm:flex-row items-center bg-white h-auto sm:h-60 mt-1 border-black border-b-2">
                 <div className="flex-grow flex items-center justify-center">
-                    <div className="text-center">
+                    <div className="text-center lg:text-7xl sm:text-2xl">
                         <p className="bg-blue-700 text-white">nils dambowy</p>
                         <p className="">(he/him)</p>
                     </div>
                 </div>
                 <div className="flex-grow flex items-center justify-center">
-                    <div className="text-center">
+                    <div className="text-center lg:text-7xl sm:text-2xl">
                         <p className="bg-yellow-400 text-white">computer science student</p>
                         <p className="">tu darmstadt</p>
                     </div>
