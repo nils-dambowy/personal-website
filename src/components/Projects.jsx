@@ -6,10 +6,10 @@ export default function Projects() {
     return (
         <>
             <Header/>
-            <div className="flex h-screen w-full items-right flow-root">
+            <div className="flex h-screen w-full items-right lg:flow-root">
                 {/* project sections*/}
                 <div className="w-4/5 float-left">
-                    <div className="flex flex-row justify-evenly pt-8">
+                    <div className="flex lg:flex-row sm:flex-col justify-evenly pt-8">
 
                         <a href="projects/1" className="project-grid-item bg-white border-black border-2 w-1/4 h-64">
                             <div>

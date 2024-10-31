@@ -1,8 +1,8 @@
 
 export default function Footer() {
     return (
-      <div className="w-full h-20 bg-white border-solid border-t-2 border-black md:px-12">
-        <div className="flex items-center justify-center w-full h-full text-4xl">
+      <div className="w-full h-20 bg-white border-solid border-t-2 border-black md:px-12 lg:text-4xl">
+        <div className="flex items-center justify-center w-full h-full">
             find me:
             <button title="LinkedIn">
                 <a href="">

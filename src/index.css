@@ -4,47 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@media only screen and (min-width: 1920px) and (max-width: 2560px) {
-
-  .profile {
-    background-image: url("./assets/plus.svg");
-    background-repeat: repeat-y;
-    background-position: top 0px left -16px;
-    background-attachment: fixed;
-    height: 88.5vh;
-  }
-}
-
-
-@media only screen and (min-width: 1024px) and (max-width: 1920px) {
-  .profile {
-    background-image: url("./assets/plus.svg");
-    background-repeat: repeat-y;
-    background-position: top 0px left -16px;
-    background-attachment: fixed;
-    height: 84vh;
-  }
-}
-
-
 body {
   font-family: "Bricolage Grotesque";
 }
 html{
-  
-  width: 100%;
-  height: 100%;
   background-color: rgb(255, 194, 41)
 }
 
-.line{
-  width: 90vw;
-  border-top: 2px solid black;
-  margin: 0 auto;
-  }
-
-.header-icons{
+.header-icons {
   background-color: rgb(255, 194, 41);
   width: 48px;
   height: 48px;
@@ -52,6 +19,31 @@ html{
   border: 2px solid black;
   box-shadow: 3px 3px 0px #000000;
 }
+
+@media (max-width: 640px) { /* Mobile screens */
+  .header-icons {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+}
+
+.profile {
+  background-image: url("./assets/plus.svg");
+  background-repeat: repeat-y;
+  background-position: top 0px left -16px;
+  background-attachment: fixed;
+}
+
+@media (max-width: 640px) { /* Mobile screens */
+  .profile {
+    background-image: url("./assets/plus.svg");
+    background-repeat: repeat-y;
+    background-position: top 0px left -140px;
+    background-attachment: fixed;
+  }
+}
+
 
 /*
 .profile h1:hover{
@@ -92,54 +84,10 @@ html{
   box-shadow: 2px 2px 0px #000000;
 }
 
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 5px rgba(23, 23, 23, 0.2), 
-                 0 0 10px rgba(23, 23, 23, 0.2),  
-                 0 0 15px rgba(23, 23, 23, 0.2), 
-                 0 0 20px rgba(23, 23, 23, 0.2), 
-                 0 0 30px rgba(23, 23, 23, 0.2);
-  }
-  100% {
-    text-shadow: 0 0 5px rgba(23, 23, 23, 0.2), 
-                 0 0 10px rgba(23, 23, 23, 0.2), 
-                 0 0 15px rgba(23, 23, 23, 0.3), 
-                 0 0 20px rgba(23, 23, 23, 0.4), 
-                 0 0 30px rgba(23, 23, 23, 0.6);
-  }
-}
-
-@keyframes hover_glow {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 
-                 0 0 10px rgba(255, 255, 255, 0.2),
-                 0 0 15px rgba(255, 255, 255, 0.2),
-                 0 0 20px rgba(255, 255, 255, 0.2), 
-                 0 0 30px rgba(255, 255, 255, 0.2);
-  }
-  100% {
-    text-shadow: 0 0 5px rgba(23, 23, 23, 0.2), 
-                 0 0 10px rgba(23, 23, 23, 0.2), 
-                 0 0 15px rgba(23, 23, 23, 0.3), 
-                 0 0 20px rgba(23, 23, 23, 0.4), 
-                 0 0 30px rgba(23, 23, 23, 0.6);
-  }
-}
-
-.about-header-section p{
-  font-size: 3vw;
-  line-height: 3vw;
-  white-space: nowrap;
-}
-
 .tech{
   background-image: url("./assets/grid.svg");
 }
 
-.tech p{
-  font-size: 3vw;
-  line-height: 3vw;
-}
 
 .svg-icon {
   width: 100%;    /* Fit the width of the parent container */
@@ -161,33 +109,4 @@ html{
   box-shadow: 2px 2px 2px #000000;
   transition-timing-function: linear;
   transition-duration: 150ms
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-  .profile {
-    background-image: url("./assets/plus.svg");
-    background-repeat: repeat-y;
-    background-position: top 0px left -16px;
-    background-attachment: fixed;
-    height: 84vh;
-    width: 25%;
-  }
-  .profile section{
-    display: block;
-  }
-
-  /* div with image and text*/
-  .profile section div {
-    display: block;
-    justify-content: right;
-  }
-
-  .profile section div div{
-    text-align: right;
-    font-size: 12vw;
-  }
 }
