@@ -92,7 +92,7 @@ export default function About() {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p>Technical</p>
+                        <p className="lg:text-7xl text-sm">Technical</p>
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_72_7084)">
                                 <g clipPath="url(#clip1_72_7084)">
@@ -197,7 +197,7 @@ export default function About() {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p>Technical</p>
+                        <p className="lg:text-7xl text-sm">Technical</p>
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_72_7084)">
                                 <g clipPath="url(#clip1_72_7084)">
@@ -301,7 +301,7 @@ export default function About() {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p>Soft</p>
+                        <p className="lg:text-7xl text-sm">Soft</p>
                         <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_72_7084)">
                                 <g clipPath="url(#clip1_72_7084)">
