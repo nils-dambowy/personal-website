@@ -110,3 +110,20 @@ html{
   transition-timing-function: linear;
   transition-duration: 150ms
 }
+
+#contact-card{
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 5px 5px 0px #000000;
+}
+.rotated {
+  transform: rotate(-95deg) scaleX(-1);
+  opacity: 0;
+}
+
+.star-bg-sm{
+  background-image: url("./assets/star.webp");
+  background-position: top 40px right 190px;
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
