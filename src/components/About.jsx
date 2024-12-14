@@ -60,9 +60,11 @@ export default function About() {
                     </div>
                     <div
                         className="text-sm text-center border-black border-r-2 border-l-2 border-b-2 pl-4 leading-relaxed">
-                        <p className="pb-2"> Outside of work, I&apos;m a passionate athlete. Whether it&apos;s climbing,
-                            yoga, or
-                            running, I love staying active, clearing my mind, and taking on new challenges.
+                        <p className="pb-2"> Outside of work, I’m a passionate athlete. Whether it’s climbing, cycling, or running.<br/>
+                            I love staying active, clearing my mind, and sharing these experiences with others. <br/>I believe that activities
+                            like these are not just about fitness but about building connections—some of my best ideas and friendships have
+                            come while out on a run or tackling a bouldering problem together.</p>
+                        <p className="pb-2">
                             I grew up in Bruchköbel, completed my studies in Frankfurt, and later decided
                             to pursue my master&apos;s at TU Darmstadt. When I’m not programming, you&apos;ll likely
                             find me in the climbing gym, making music, or enjoying the outdoors.
