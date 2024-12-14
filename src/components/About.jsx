@@ -123,28 +123,28 @@ export default function About() {
                                     <div
                                         className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text1
+                                <p className="w-11">JavaScript</p>
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
                                     <div
                                         className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text2
+                                <p className="w-11">Python</p>
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-center pr-2">
                                     <div
                                         className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text3
+                                <p className="w-11">C++</p>
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-center pr-2">
                                     <div
                                         className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text4
+                                <p className="w-11">ReactJS</p>
                             </div>
                         </div>
                         <div className="flex h-full flex-col">
@@ -153,134 +153,32 @@ export default function About() {
                                     <div
                                         className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text1
+                                <p className="w-11">TailwindCSS</p>
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-cente pr-2">
                                     <div
                                         className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text2
+                                <p className="w-11">Git</p>
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-center pr-2">
                                     <div
                                         className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text3
+                                <p className="w-11">Docker</p>
                             </div>
                             <div className="flex-grow flex items-center justify-center">
                                 <div className="text-center pr-2">
                                 <div
                                         className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
                                 </div>
-                                Text4
+                                <p className="w-11">Pytorch</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div className="flex flex-row w-full justify-center">
-                    <div className="text-white flex bg-green-400 flex-col text-center border-black border-2 w-1/5">
-                        <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clipPath="url(#clip0_72_7086)">
-                                <g clipPath="url(#clip1_72_7086)">
-                                    <path
-                                        d="M350 23.4242H231.552L315.306 107.179L282.179 140.306L198.424 56.5516V175H151.576V56.5516L67.821 140.306L34.6936 107.179L118.446 23.4242H0V-23.427H118.446L34.6936 -107.179L67.821 -140.309L151.576 -56.5543V-175H198.424V-56.5543L282.179 -140.309L315.306 -107.179L231.552 -23.427H350V23.4242Z"
-                                        fill="currentColor"></path>
-                                </g>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_72_7086">
-                                    <rect width="350" height="175" fill="white"
-                                          transform="matrix(1 0 0 -1 0 175)"></rect>
-                                </clipPath>
-                                <clipPath id="clip1_72_7086">
-                                    <rect width="350" height="350" fill="white"
-                                          transform="matrix(1 0 0 -1 0 175)"></rect>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <p className="lg:text-7xl text-sm">Soft</p>
-                        <svg className="svg-icon" viewBox="0 0 350 175" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clipPath="url(#clip0_72_7084)">
-                                <g clipPath="url(#clip1_72_7084)">
-                                    <path
-                                        d="M350 151.576H231.552L315.306 67.821L282.179 34.6936L198.424 118.448V0H151.576V118.448L67.821 34.6936L34.6936 67.821L118.446 151.576H0V198.427H118.446L34.6936 282.179L67.821 315.309L151.576 231.554V350H198.424V231.554L282.179 315.309L315.306 282.179L231.552 198.427H350V151.576Z"
-                                        fill="currentColor"></path>
-                                </g>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_72_7084">
-                                    <rect width="350" height="175" fill="white"></rect>
-                                </clipPath>
-                                <clipPath id="clip1_72_7084">
-                                    <rect width="350" height="350" fill="white"></rect>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div className=" flex border-black border-r-2 border-t-2 border-b-2 w-3/6 bg-white justify-center items-center text-center">
-                        <div className="flex-col flex h-full lg:pr-64 pr-2" >
-                            <div className="flex-grow flex items-center">
-                                <div className="text-center pr-2">
-                                    <div className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text1
-                            </div>
-                            <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text2
-                            </div>
-                            <div className="flex-grow flex items-center justify-center">
-                                <div className="text-center pr-2">
-                                    <div className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text3
-                            </div>
-                            <div className="flex-grow flex items-center justify-center">
-                                <div className="text-center pr-2">
-                                    <div className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text4
-                            </div>
-                        </div>
-                        <div className="flex h-full flex-col">
-                            <div className="flex-grow flex items-center">
-                                <div className="text-center pr-2">
-                                    <div
-                                        className=" w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text1
-                            </div>
-                            <div className="flex-grow flex items-center justify-center">
-                                <div className="text-cente pr-2">
-                                    <div
-                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text2
-                            </div>
-                            <div className="flex-grow flex items-center justify-center">
-                                <div className="text-center pr-2">
-                                    <div
-                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text3
-                            </div>
-                            <div className="flex-grow flex items-center justify-center">
-                                <div className="text-center pr-2">
-                                    <div
-                                        className="w-2 h-2 lg:w-5 lg:h-5 sm:h-2 sm:w-2 bg-yellow-400 about-icons "></div>
-                                </div>
-                                Text4
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
 
             <Footer/>
