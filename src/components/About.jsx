@@ -37,21 +37,19 @@ export default function About() {
                     </div>
                     <div
                         className="block text-sm text-center border-black border-r-2 border-l-2 border-b-2 pl-4 leading-relaxed ">
-                        <p className="pb-2"> i don&apos;t take myself too seriously. the internet is big and wide and
-                            i&apos;d be a fool to think i can&apos;t learn *at least* five or six things from anyone i
-                            work or interact with.</p>
-                        <p className="pb-2"> i learned html & css in high school, but everyone neglected to tell me it
-                            was something i could do for a job! i ended up getting back to it in late 2023 when
-                            finishing up my cs degree.</p>
-                        <p className="pb-2"> Outside of work, I&apos;m a passionate athlete. Whether it&apos;s climbing, yoga, or
-                            running, I love staying active, clearing my mind, and taking on new challenges.
-                            I grew up in Bruchköbel, completed my studies in Frankfurt, and later decided
-                            to pursue my master&apos;s at TU Darmstadt. When I’m not programming, you&apos;ll likely find me in the climbing gym, making music, or enjoying the outdoors.
-                            </p>
-                        <p> Dream job: Somewhere I can combine my passion for technology with real-world impact.</p>
+                        <p>I first dabbled in programming back in school, but it wasn’t until my computer science studies at
+                        Goethe University in Frankfurt that I truly found my passion for development and artificial
+                        intelligence. Now, I’m pursuing my master’s degree in computer science at TU Darmstadt.</p>
+
+                        <p className="pt-2">I’m driven by a desire to build things that make life easier – not just
+                        for me, but for the people who use them. The less we have to think about the mundane tasks of
+                        daily life, the more time we have to work on bigger, cooler, and more meaningful projects.</p>
+
+                        <p className="pt-2">Dream job: A role that bridges software development and AI, solving real-world problems in innovative ways.</p>
                     </div>
                 </div>
-                <div className="flex-wrap flex flex-col items-end justify-center bg-white md:w-1/2 lg:max-w-xl mt-10 sm:mt-10 lg:mt-0 w-4/5 mb-10 lg:mb-0 sm:mb-10 ">
+                <div
+                    className="flex-wrap flex flex-col items-end justify-center bg-white md:w-1/2 lg:max-w-xl mt-10 sm:mt-10 lg:mt-0 w-4/5 mb-10 lg:mb-0 sm:mb-10 ">
                     <div className="border-black border-2 w-full font-bold flex items-center pl-4 h-10">
                         Personal
                         <div className="flex ml-auto space-x-2 mr-2">
@@ -62,11 +60,13 @@ export default function About() {
                     </div>
                     <div
                         className="text-sm text-center border-black border-r-2 border-l-2 border-b-2 pl-4 leading-relaxed">
-                        <p>i am, first and foremost, a dog enthusiast. i would do anything for my dogs, and honestly,
-                            i&apos;d probably do anything for yours, too.</p>
-                        <p className="pt-2">i grew up in a town close to Frankfurt, and went to university in Frankfurt
-                            before attending tu darmstadt to obtain my masters in computer science.</p>
-                        <p className="pt-2">dream job: dog ranch owner & operator</p>
+                        <p className="pb-2"> Outside of work, I&apos;m a passionate athlete. Whether it&apos;s climbing,
+                            yoga, or
+                            running, I love staying active, clearing my mind, and taking on new challenges.
+                            I grew up in Bruchköbel, completed my studies in Frankfurt, and later decided
+                            to pursue my master&apos;s at TU Darmstadt. When I’m not programming, you&apos;ll likely
+                            find me in the climbing gym, making music, or enjoying the outdoors.
+                        </p>
                     </div>
                 </div>
             </div>
