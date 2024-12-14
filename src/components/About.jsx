@@ -66,8 +66,9 @@ export default function About() {
                             come while out on a run or tackling a bouldering problem together.</p>
                         <p className="pb-2">
                             I grew up in Bruchköbel, completed my studies in Frankfurt, and later decided
-                            to pursue my master&apos;s at TU Darmstadt. When I’m not programming, you&apos;ll likely
-                            find me in the climbing gym, making music, or enjoying the outdoors.
+                            to pursue my master&apos;s at TU Darmstadt. When I’m not programming, you’ll likely find me
+                            planning my next trip, making music, or enjoying the outdoors. I also have a habit of getting
+                            lost in documentaries and learning about niche topics
                         </p>
                     </div>
                 </div>
