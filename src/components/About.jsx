@@ -43,10 +43,12 @@ export default function About() {
                         <p className="pb-2"> i learned html & css in high school, but everyone neglected to tell me it
                             was something i could do for a job! i ended up getting back to it in late 2023 when
                             finishing up my cs degree.</p>
-                        <p className="pb-2"> i&apos;m big on doing whatever i can to make things easier for myself and
-                            the people i work with. the less we have to think about the day to day, the more time we
-                            have to discuss doing bigger, better, more accessible & cooler things.</p>
-                        <p> dream job: building the goofy off-brand websites you see in movies and TV</p>
+                        <p className="pb-2"> Outside of work, I&apos;m a passionate athlete. Whether it&apos;s climbing, yoga, or
+                            running, I love staying active, clearing my mind, and taking on new challenges.
+                            I grew up in Bruchköbel, completed my studies in Frankfurt, and later decided
+                            to pursue my master&apos;s at TU Darmstadt. When I’m not programming, you&apos;ll likely find me in the climbing gym, making music, or enjoying the outdoors.
+                            </p>
+                        <p> Dream job: Somewhere I can combine my passion for technology with real-world impact.</p>
                     </div>
                 </div>
                 <div className="flex-wrap flex flex-col items-end justify-center bg-white md:w-1/2 lg:max-w-xl mt-10 sm:mt-10 lg:mt-0 w-4/5 mb-10 lg:mb-0 sm:mb-10 ">
