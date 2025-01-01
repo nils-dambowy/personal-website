@@ -7,7 +7,8 @@
 body {
   font-family: "Bricolage Grotesque";
 }
-html{
+
+html {
   background-color: rgb(255, 194, 41)
 }
 
@@ -20,7 +21,9 @@ html{
   box-shadow: 3px 3px 0px #000000;
 }
 
-@media (max-width: 640px) { /* Mobile screens */
+@media (max-width: 640px) {
+
+  /* Mobile screens */
   .header-icons {
     width: 0px;
     height: 0px;
@@ -35,7 +38,9 @@ html{
   background-attachment: fixed;
 }
 
-@media (max-width: 640px) { /* Mobile screens */
+@media (max-width: 640px) {
+
+  /* Mobile screens */
   .profile {
     background-image: url("./assets/plus.svg");
     background-repeat: repeat-y;
@@ -54,7 +59,7 @@ html{
   animation: hover_glow 1s infinite alternate;
 }
 */
-.footer-icons{
+.footer-icons {
   background-color: rgb(255, 194, 41);
   width: 48px;
   height: 48px;
@@ -65,63 +70,118 @@ html{
   transition-duration: 150ms
 }
 
-.footer-icons:hover{
+.footer-icons:hover {
   box-shadow: 1px 1px 0px #000000;
   transition-timing-function: linear;
   transition-duration: 150ms
 }
 
-.personal{
+.personal {
   background-image: url("./assets/dots.svg");
   background-repeat: repeat-x;
   background-position: top -8px left -16px;
   background-attachment: fixed;
 }
 
-.about-icons{
+.about-icons {
   border-radius: 50%;
   border: 2px solid black;
   box-shadow: 2px 2px 0px #000000;
 }
 
-.tech{
+.tech {
   background-image: url("./assets/grid.svg");
 }
 
 
 .svg-icon {
-  width: 100%;    /* Fit the width of the parent container */
-  height: auto;   /* Maintain aspect ratio */
-  max-width: 100%;  /* Ensure it doesn't overflow */
-  object-fit: contain;  /* Preserve aspect ratio */
+  width: 100%;
+  /* Fit the width of the parent container */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure it doesn't overflow */
+  object-fit: contain;
+  /* Preserve aspect ratio */
 }
 
-.work-grid-bg{
+.work-grid-bg {
   background-image: url("./assets/grid.svg");
   background-position: top -8px right -16px;
 }
 
-.project-grid-item{
+.tooltip {
+  position: relative;
+  display: block;
+}
+
+/* Tooltip text */
+.tooltip .tooltip-obm {
+  top: 200px;
+  visibility: hidden;
+  left: 40px;
+  width: 200px;
+  background-color: mediumpurple;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #000000;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-obm {
+  visibility: visible;
+}
+
+.tooltip .tooltip-url {
+  top: 200px;
+  left: 40px;
+  visibility: hidden;
+  width: 200px;
+  background-color: mediumpurple;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #000000;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-url {
+  visibility: visible;
+}
+
+.project-grid-item {
   box-shadow: 5px 5px 0px #000000;
 }
 
-.project-grid-item:hover{
+.project-grid-item:hover {
   box-shadow: 2px 2px 2px #000000;
   transition-timing-function: linear;
   transition-duration: 150ms
 }
 
-#contact-card{
+#contact-card {
   background-color: white;
   border: 3px solid black;
   box-shadow: 5px 5px 0px #000000;
 }
+
 .rotated {
   transform: rotate(-95deg) scaleX(-1);
   opacity: 0;
 }
 
-.star-bg-sm{
+.star-bg-sm {
   background-image: url("./assets/star.webp");
   background-position: top 40px right 190px;
   background-size: 500px;
