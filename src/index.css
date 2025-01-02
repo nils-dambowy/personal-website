@@ -110,27 +110,20 @@ html {
   background-position: top -8px right -16px;
 }
 
-.tooltip {
-  position: relative;
-  display: block;
-}
+.tooltip {}
 
 /* Tooltip text */
-.tooltip .tooltip-obm {
+.tooltip-obm {
   top: 200px;
+  width: 10vh;
   visibility: hidden;
-  left: 40px;
-  width: 200px;
   background-color: mediumpurple;
   color: white;
   text-align: center;
   padding: 5px 0;
   border: 2px solid black;
   box-shadow: 5px 5px 0px #000000;
-
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
+  display: block;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -138,21 +131,17 @@ html {
   visibility: visible;
 }
 
-.tooltip .tooltip-url {
+.tooltip-url {
   top: 200px;
-  left: 40px;
+  width: 10vh;
   visibility: hidden;
-  width: 200px;
   background-color: mediumpurple;
   color: white;
   text-align: center;
   padding: 5px 0;
   border: 2px solid black;
   box-shadow: 5px 5px 0px #000000;
-
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
+  display: block;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
