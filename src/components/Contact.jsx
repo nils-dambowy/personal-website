@@ -6,7 +6,7 @@ export default function Contact() {
     <>
       <Header />
       <div className="flex flex-col items-center justify-center h-screen w-screen px-10">
-        <p className=" text-9xl italic text-shadow-white">Contact me!</p>
+        <p className=" lg:text-9xl text-5xl italic">Contact me!</p>
         <div className="lg:w-3/6 bg-white w-full justify-center flex flex-col items-center pb-5 border-black border-4 work-grid-bg mt-12">
           <div id="contact-card" className="w-5/6 h-20 flex items-center justify-center mt-4 text-3xl bg-gray-200">
             Github
