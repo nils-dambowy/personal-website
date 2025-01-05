@@ -8,7 +8,7 @@ export default function Header() {
 
       <nav className="flex lg:space-x-6 lg:text-3xl w-3/4 sm:text-2xl">
         <a href="/about" className="border-r-2 border-black w-1/3 h-20 flex items-center justify-center">
-          <div className="flex footer-icons items-center justify-center header-icons mr-2">
+          <div className="flex items-center justify-center header-icons mr-2">
             <svg
               stroke="currentColor"
               fill="none"
@@ -30,7 +30,7 @@ export default function Header() {
 
 
         <a href="/projects" className="border-r-2 border-black w-1/3 h-20 flex items-center justify-center">
-          <div className="flex footer-icons items-center justify-center header-icons mr-2">
+          <div className="flex items-center justify-center header-icons mr-2">
             <svg stroke="currentColor" fill="none" strokeWidth="1.5" viewBox="0 0 24 24"
               strokeLinecap="round" strokeLinejoin="round" className="h-0 w-0 sm:h-0 sm:w-0 lg:h-8 lg:w-8"
               xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@ export default function Header() {
         </a>
 
         <a href="/contact" className="border-r-2 border-black w-1/3 h-20 flex items-center justify-center">
-          <div className="flex footer-icons items-center justify-center header-icons mr-2">
+          <div className="flex items-center justify-center header-icons mr-2">
             <svg stroke="currentColor" fill="none" strokeWidth="1.5" viewBox="0 0 24 24"
               strokeLinecap="round" strokeLinejoin="round" className="h-0 w-0 sm:h-3 sm:w-4 lg:h-8 lg:w-8"
               xmlns="http://www.w3.org/2000/svg">

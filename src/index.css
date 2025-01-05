@@ -21,6 +21,14 @@ html {
   box-shadow: 3px 3px 0px #000000;
 }
 
+
+.header-icons:hover {
+  box-shadow: 1px 1px 0px #000000;
+  transition-timing-function: linear;
+  transition-duration: 150ms
+}
+
+
 @media (max-width: 640px) {
 
   /* Mobile screens */
