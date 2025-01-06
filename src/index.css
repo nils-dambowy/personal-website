@@ -122,8 +122,7 @@ html {
 
 /* Tooltip text */
 .tooltip-obm {
-  top: 200px;
-  width: 10vh;
+  width: 10vw;
   visibility: hidden;
   background-color: mediumpurple;
   color: white;
@@ -140,8 +139,7 @@ html {
 }
 
 .tooltip-url {
-  top: 200px;
-  width: 10vh;
+  width: 10vw;
   visibility: hidden;
   background-color: mediumpurple;
   color: white;
