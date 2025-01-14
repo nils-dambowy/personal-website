@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  background-color: rgb(255, 194, 41)
+  background-color: rgb(255, 194, 41);
 }
 
 .header-icons {
@@ -21,16 +21,13 @@ html {
   box-shadow: 3px 3px 0px #000000;
 }
 
-
 .header-icons:hover {
   box-shadow: 1px 1px 0px #000000;
   transition-timing-function: linear;
-  transition-duration: 150ms
+  transition-duration: 150ms;
 }
 
-
 @media (max-width: 640px) {
-
   /* Mobile screens */
   .header-icons {
     width: 0px;
@@ -47,7 +44,6 @@ html {
 }
 
 @media (max-width: 640px) {
-
   /* Mobile screens */
   .profile {
     background-image: url("./assets/plus.svg");
@@ -56,7 +52,6 @@ html {
     background-attachment: fixed;
   }
 }
-
 
 /*
 .profile h1:hover{
@@ -75,13 +70,13 @@ html {
   border: 2px solid black;
   box-shadow: 3px 3px 0px #000000;
   transition-timing-function: linear;
-  transition-duration: 150ms
+  transition-duration: 150ms;
 }
 
 .footer-icons:hover {
   box-shadow: 1px 1px 0px #000000;
   transition-timing-function: linear;
-  transition-duration: 150ms
+  transition-duration: 150ms;
 }
 
 .personal {
@@ -101,7 +96,6 @@ html {
   background-image: url("./assets/grid.svg");
 }
 
-
 .svg-icon {
   width: 100%;
   /* Fit the width of the parent container */
@@ -117,8 +111,6 @@ html {
   background-image: url("./assets/grid.svg");
   background-position: top -8px right -16px;
 }
-
-.tooltip {}
 
 /* Tooltip text */
 .tooltip-obm {
@@ -162,7 +154,7 @@ html {
 .project-grid-item:hover {
   box-shadow: 2px 2px 2px #000000;
   transition-timing-function: linear;
-  transition-duration: 150ms
+  transition-duration: 150ms;
 }
 
 #contact-card {

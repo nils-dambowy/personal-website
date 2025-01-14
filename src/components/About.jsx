@@ -130,38 +130,38 @@ export default function About() {
             <div className="flex-col flex justify-between lg:py-6  items-center h-auto lg:pr-96 pr-9">
               <div className="flex items-center">
                 <div className="lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">JavaScript</p>
+                <p className="w-11 lg:text-2xl text-sm">JavaScript</p>
               </div>
               <div className="flex items-center">
                 <div className="lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">Python</p>
+                <p className="w-11 lg:text-2xl text-sm">Python</p>
               </div>
               <div className="flex items-center">
                 <div className=" lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">C++</p>
+                <p className="w-11 lg:text-2xl text-sm">C++</p>
               </div>
               <div className="flex items-center">
                 <div className=" lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">ReactJS</p>
+                <p className="w-11 lg:text-2xl text-sm">ReactJS</p>
               </div>
             </div>
             {/* Second column of technologies */}
             <div className="flex-col flex justify-between lg:py-6 items-center h-auto">
               <div className="flex items-center">
                 <div className="lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">TailwindCSS</p>
+                <p className="w-11 lg:text-2xl text-sm">TailwindCSS</p>
               </div>
               <div className="flex items-center">
                 <div className="lg:h-4 lg:w-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">Git</p>
+                <p className="w-11 lg:text-2xl text-sm">Git</p>
               </div>
               <div className="flex items-center">
                 <div className="lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">Docker</p>
+                <p className="w-11 lg:text-2xl text-sm">Docker</p>
               </div>
               <div className="flex items-center">
                 <div className="lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
-                <p className="w-11 lg:text-5xl text-sm">Pytorch</p>
+                <p className="w-11 lg:text-2xl text-sm">Pytorch</p>
               </div>
             </div>
           </div>
