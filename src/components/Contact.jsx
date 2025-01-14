@@ -1,8 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-import { CV } from "../assets/CV.pdf"
-
 export default function Contact() {
   return (
     <>
@@ -37,9 +35,8 @@ export default function Contact() {
           </a>
           <a
             id="contact-card"
-            href={CV}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/CV.pdf"
+            targer="_blank"
             className="w-5/6 h-20 flex items-center justify-center mt-8 text-3xl bg-gray-200"
           >
             CV
