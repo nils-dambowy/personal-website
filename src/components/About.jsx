@@ -6,15 +6,15 @@ export default function About() {
     <div className="flex flex-col min-h-screen">
       <Header />
       {/* Header section */}
-      <div className="about-header-section flex flex-col sm:flex-row items-center bg-white h-auto sm:h-60 mt-1 border-black border-b-2 border-t-2">
+      <div className="about-header-section flex flex-col sm:flex-row items-center bg-white h-auto lg:py-9 mt-1 border-black border-b-2 border-t-2">
         <div className="flex-grow flex items-center justify-center">
-          <div className="text-center lg:text-7xl sm:text-2xl">
+          <div className="text-center lg:text-5xl text-2xl">
             <p className="bg-blue-700 text-white">nils dambowy</p>
             <p>(he/him)</p>
           </div>
         </div>
         <div className="flex-grow flex items-center justify-center">
-          <div className="text-center lg:text-7xl sm:text-2xl">
+          <div className="text-center lg:text-5xl text-2xl">
             <p className="bg-yellow-400 text-white">computer science student</p>
             <p>tu darmstadt</p>
           </div>
@@ -84,12 +84,12 @@ export default function About() {
       </div>
 
       {/* Technology section */}
-      <div className="flex flex-col tech bg-white border-black border-t-2 items-center justify-center flex-grow ">
-        <div className="flex flex-row lg:w-4/6 w-5/6 justify-center items-stretch lg:my-0 my-6">
+      <div className="flex  tech bg-white border-black border-t-2 items-center justify-center">
+        <div className="flex flex-row lg:w-3/5 w-full justify-center  my-3">
           {/* SVG and its container */}
-          <div className="flex bg-blue-400 flex-col text-center border-black border-2 w-1/5">
+          <div className="flex bg-blue-400 flex-col text-center border-black border-2 w-1/5 lg:w-1/5">
             <svg
-              className="svg-icon h-full"
+              className="svg-icon"
               viewBox="0 0 350 175"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -99,9 +99,9 @@ export default function About() {
                 fill="currentColor"
               />
             </svg>
-            <p className="lg:text-7xl text-sm">Technical</p>
+            <p className="lg:text-3xl text-sm text-white">Technical</p>
             <svg
-              className="svg-icon h-full"
+              className="svg-icon"
               viewBox="0 0 350 175"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -125,9 +125,9 @@ export default function About() {
             </svg>
           </div>
           {/* Technologies content */}
-          <div className="flex border-black border-r-2 border-t-2 border-b-2 bg-white flex-grow justify-center">
+          <div className="flex border-black border-r-2 border-t-2 border-b-2 bg-white lg:w-3/5 w-4/5 justify-center">
             {/* First column of technologies */}
-            <div className="flex-col flex justify-between lg:py-6  items-center h-auto lg:pr-96 pr-9">
+            <div className="flex-col flex justify-between lg:py-3  items-center h-auto lg:pr-64 pr-9">
               <div className="flex items-center">
                 <div className="lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
                 <p className="w-11 lg:text-2xl text-sm">JavaScript</p>
@@ -146,7 +146,7 @@ export default function About() {
               </div>
             </div>
             {/* Second column of technologies */}
-            <div className="flex-col flex justify-between lg:py-6 items-center h-auto">
+            <div className="flex-col flex justify-between lg:py-3 items-center h-auto">
               <div className="flex items-center">
                 <div className="lg:w-4 lg:h-4 w-2 h-2 bg-yellow-400 about-icons mr-2"></div>
                 <p className="w-11 lg:text-2xl text-sm">TailwindCSS</p>
