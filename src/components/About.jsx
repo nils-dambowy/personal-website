@@ -6,7 +6,7 @@ export default function About() {
     <div className="flex flex-col min-h-screen">
       <Header />
       {/* Header section */}
-      <div className="about-header-section flex flex-col sm:flex-row items-center bg-white h-auto lg:py-9 mt-1 border-black border-b-2 border-t-2">
+      <div className="flex flex-col sm:flex-row items-center bg-white h-auto lg:py-9 mt-1 border-black border-b-2 border-t-2">
         <div className="flex-grow flex items-center justify-center">
           <div className="text-center lg:text-5xl text-2xl">
             <p className="bg-blue-700 text-white">nils dambowy</p>
