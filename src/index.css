@@ -81,7 +81,7 @@ html {
 
 .personal {
   background-image: url("./assets/dots.svg");
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   background-position: top -8px left -16px;
   background-attachment: fixed;
 }
