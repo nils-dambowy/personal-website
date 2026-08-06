@@ -1,0 +1,76 @@
+# GitLab CI/CD Pipeline for Personal Website
+# Includes HashiCorp Vault Secrets Management Integration
+
+stages:
+  - lint
+  - build
+  - vault-secrets
+  - deploy
+
+default:
+  image: node:20-alpine
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm/
+
+before_script:
+  - npm ci --cache .npm --prefer-offline
+
+# 1. Lint & Code Quality Verification
+lint:
+  stage: lint
+  script:
+    - npm run lint
+  only:
+    - main
+    - merge_requests
+
+# 2. Build Production Bundle
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    name: "production-build-$CI_COMMIT_REF_SLUG"
+    paths:
+      - dist/
+    expire_in: 1 week
+  only:
+    - main
+    - merge_requests
+
+# 3. HashiCorp Vault Secrets Management Integration Example
+vault:fetch-secrets:
+  stage: vault-secrets
+  image: hashicorp/vault:latest
+  before_script: [] # Skip npm install for vault CLI image
+  id_tokens:
+    VAULT_AUTH_TOKEN:
+      aud: https://vault.example.hzd.de
+  variables:
+    VAULT_ADDR: "https://vault.example.hzd.de:8200"
+    VAULT_ROLE: "gitlab-ci-role"
+  script:
+    - echo "Authenticating with HashiCorp Vault via JWT/OIDC..."
+    - export VAULT_TOKEN="$(vault write -field=token auth/jwt/login role=${VAULT_ROLE} jwt=${VAULT_AUTH_TOKEN})"
+    - echo "Fetching secrets securely from Vault KV engine..."
+    - export DEPLOY_KEY=$(vault kv get -field=deploy_key secret/data/ci/personal-website)
+    - echo "Secrets successfully injected into pipeline memory!"
+  allow_failure: true
+  rules:
+    - if: '$VAULT_ENABLED == "true"'
+
+# 4. Deploy Static Pages
+pages:
+  stage: deploy
+  dependencies:
+    - build
+  before_script: []
+  script:
+    - mv dist public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
