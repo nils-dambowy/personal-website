@@ -39,11 +39,14 @@ export default function Profile() {
             className="mt-4 text-lg sm:text-2xl lg:text-3xl font-bold flex flex-wrap items-center justify-center gap-2"
           >
             <span className="bg-[#ffc229] border-2 border-black px-3 py-1 shadow-[2px_2px_0px_#000]">
-              Computer Science Student
+              Cloud IT Trainee
             </span>
             <span className="text-gray-700">@</span>
             <span className="bg-white border-2 border-black px-3 py-1 shadow-[2px_2px_0px_#000]">
-              TU Darmstadt
+              HZD
+            </span>
+            <span className="text-gray-500 text-sm sm:text-lg font-semibold block w-full mt-1">
+              M.Sc. Computer Science Student @ TU Darmstadt
             </span>
           </motion.div>
 
@@ -53,10 +56,10 @@ export default function Profile() {
             transition={{ delay: 0.4 }}
             className="mt-4 text-sm sm:text-base lg:text-lg text-gray-800 leading-relaxed font-medium max-w-xl mx-auto"
           >
-            Passionate about building intuitive software, artificial intelligence, and real-world tools that simplify daily life.
+            Specializing in Cloud Infrastructure, Container Orchestration (Kubernetes, Docker), DevOps (GitLab CI/CD), Linux Systems, and AI-driven solutions.
           </motion.p>
 
-          {/* Action CTAs with Bold Black Borders */}
+          {/* Action CTAs */}
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

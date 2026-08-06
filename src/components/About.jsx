@@ -5,32 +5,34 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const technologies = [
-    { name: "JavaScript", color: "bg-yellow-400" },
+    { name: "Kubernetes", color: "bg-blue-600 text-white" },
+    { name: "Docker", color: "bg-sky-500 text-white" },
+    { name: "GitLab CI/CD", color: "bg-orange-600 text-white" },
+    { name: "Linux Systems", color: "bg-[#ffc229] text-black" },
     { name: "Python", color: "bg-blue-500 text-white" },
+    { name: "Secrets & Security", color: "bg-purple-600 text-white" },
+    { name: "AI / PyTorch", color: "bg-red-500 text-white" },
+    { name: "ITIL & ITSM", color: "bg-emerald-600 text-white" },
+    { name: "ReactJS", color: "bg-cyan-400 text-black" },
     { name: "C++", color: "bg-indigo-600 text-white" },
-    { name: "ReactJS", color: "bg-cyan-400" },
-    { name: "TailwindCSS", color: "bg-sky-400" },
-    { name: "Git", color: "bg-orange-500 text-white" },
-    { name: "Docker", color: "bg-blue-600 text-white" },
-    { name: "PyTorch", color: "bg-red-500 text-white" },
   ];
 
   return (
-    <div className="flex flex-col h-screen max-h-screen bg-[#ffc229] relative z-10 overflow-x-hidden overflow-y-auto lg:overflow-y-hidden justify-between">
+    <div className="flex flex-col min-h-screen lg:h-screen lg:max-h-screen bg-[#ffc229] relative z-10 overflow-x-hidden overflow-y-auto lg:overflow-y-hidden justify-between">
       <ParticleBackground />
       <Header />
 
-      <main className="flex-grow flex flex-col justify-between py-2 relative z-10 overflow-hidden">
+      <main className="flex-grow flex flex-col justify-between py-2 relative z-10 overflow-visible lg:overflow-hidden">
         {/* Name & Title Bar */}
         <div className="bg-white border-b-2 border-t-2 border-black py-2 px-4 shadow-[0px_3px_0px_#000000]">
-          <div className="max-w-6xl mx-auto flex flex-row items-center justify-around gap-4">
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-around gap-2 sm:gap-4">
             <motion.div
               initial={{ y: -10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
               className="text-center"
             >
-              <p className="bg-blue-700 text-white font-extrabold text-lg lg:text-3xl px-3 py-0.5 border-2 border-black inline-block shadow-[2px_2px_0px_#000000]">
+              <p className="bg-blue-700 text-white font-extrabold text-base lg:text-3xl px-3 py-0.5 border-2 border-black inline-block shadow-[2px_2px_0px_#000000]">
                 nils dambowy
               </p>
               <span className="text-xs lg:text-base font-bold ml-2">(he/him)</span>
@@ -42,10 +44,10 @@ export default function About() {
               transition={{ duration: 0.3, delay: 0.1 }}
               className="text-center"
             >
-              <p className="bg-[#ffc229] text-black font-extrabold text-lg lg:text-3xl px-3 py-0.5 border-2 border-black inline-block shadow-[2px_2px_0px_#000000]">
-                computer science student
+              <p className="bg-[#ffc229] text-black font-extrabold text-base lg:text-3xl px-3 py-0.5 border-2 border-black inline-block shadow-[2px_2px_0px_#000000]">
+                cloud IT trainee
               </p>
-              <span className="text-xs lg:text-base font-bold ml-2">tu darmstadt</span>
+              <span className="text-xs lg:text-base font-bold ml-2">hzd • tu darmstadt</span>
             </motion.div>
           </div>
         </div>
@@ -71,13 +73,16 @@ export default function About() {
               </div>
               <div className="p-4 text-xs lg:text-sm leading-relaxed space-y-2.5 font-medium text-gray-900">
                 <p>
-                  I first dabbled in programming back in school, but it wasn’t until my computer science studies at Goethe University in Frankfurt that I truly found my passion for development and artificial intelligence. Now, I’m pursuing my master’s degree in computer science at TU Darmstadt.
+                  I am currently completing an intensive <strong>Cloud IT Trainee Program</strong> at the <strong>Hessische Zentrale für Datenverarbeitung (HZD)</strong>, specializing in cloud-native technologies and modern IT infrastructure.
                 </p>
                 <p>
-                  I’m driven by a desire to build things that make life easier – not just for me, but for the people who use them. The less we have to think about the mundane tasks of daily life, the more time we have to work on bigger, cooler, and more meaningful projects.
+                  My qualification covers hands-on cloud modules including <strong>Kubernetes, Docker, GitLab CI/CD, Secrets Management, Linux Administration, Python, Virtualization, ITIL/ITSM, and IT Security</strong>, alongside requirements & project management.
+                </p>
+                <p>
+                  Combined with my Bachelor&apos;s degree from Goethe University Frankfurt and Master&apos;s studies at TU Darmstadt, I am focused on building resilient, automated cloud infrastructure.
                 </p>
                 <p className="bg-yellow-100 p-2 border-l-4 border-black font-semibold text-xs lg:text-sm">
-                  <span className="font-bold">Dream job:</span> A role that bridges software development and AI, solving real-world problems in innovative ways.
+                  <span className="font-bold">Focus:</span> Cloud Architecture, Container Orchestration, DevOps Automation, and AI Integration.
                 </p>
               </div>
             </motion.div>
@@ -99,13 +104,13 @@ export default function About() {
               </div>
               <div className="p-4 text-xs lg:text-sm leading-relaxed space-y-2.5 font-medium text-gray-900">
                 <p>
-                  Outside of work, I’m a passionate athlete. Whether it’s climbing, cycling, or running – I love staying active, clearing my mind, and sharing these experiences with others.
+                  Outside of cloud engineering, I’m a passionate athlete. Whether it’s climbing, cycling, or running – I love staying active, clearing my mind, and sharing these experiences with others.
                 </p>
                 <p>
                   I believe that activities like these are not just about fitness but about building connections — some of my best ideas and friendships have come while out on a run or tackling a bouldering problem together.
                 </p>
                 <p>
-                  I grew up in Bruchköbel, completed my studies in Frankfurt, and later decided to pursue my master&apos;s at TU Darmstadt. When I’m not programming, you’ll likely find me planning my next trip, making music, or enjoying the outdoors.
+                  I grew up in Bruchköbel, completed my studies in Frankfurt, and pursued my master&apos;s at TU Darmstadt. When I’m not working on cloud projects, you’ll find me planning trips, making music, or exploring niche tech topics.
                 </p>
               </div>
             </motion.div>
@@ -129,7 +134,7 @@ export default function About() {
                   fill="currentColor"
                 />
               </svg>
-              <h2 className="text-xl lg:text-2xl font-black tracking-wider uppercase my-1">Technical</h2>
+              <h2 className="text-xl lg:text-2xl font-black tracking-wider uppercase my-1">Cloud & Tech</h2>
               <svg
                 className="w-12 h-8 text-white opacity-80"
                 viewBox="0 0 350 175"
