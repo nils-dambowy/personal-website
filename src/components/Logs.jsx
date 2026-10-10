@@ -2,16 +2,21 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ParticleBackground from "./ParticleBackground";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Logs() {
-  // Add posts here, in any order. The newest date is shown first.
-  // {
-  //   date: "2026-10-10",
-  //   title: "Post title",
-  //   text: "What the post is about.",
-  //   link: "https://example.com/full-post", // optional
-  // },
-  const posts = [];
+  // One entry per post. The post itself lives in its own file:
+  // src/components/Logs/Log<id>.jsx, reachable at /logs/<id>.
+  const posts = [
+    {
+      id: 1,
+      date: "2026-10-10",
+      title: "New terminal setup: Ghostty, fish and LazyVim",
+      description:
+        "I moved my daily setup to Ghostty with the fish shell and Neovim running LazyVim.",
+      tags: ["Neovim", "Terminal", "Tooling"],
+    },
+  ];
 
   const sortedPosts = [...posts].sort((a, b) => b.date.localeCompare(a.date));
 
@@ -20,7 +25,7 @@ export default function Logs() {
       <ParticleBackground />
       <Header />
 
-      <main className="flex-grow py-12 px-4 max-w-4xl mx-auto w-full relative z-10">
+      <main className="flex-grow py-12 px-4 max-w-7xl mx-auto w-full relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-12">
           <motion.h1
@@ -35,50 +40,50 @@ export default function Logs() {
           </p>
         </div>
 
-        {/* Posts */}
-        <div className="flex flex-col gap-8">
-          {sortedPosts.length === 0 && (
-            <div className="bg-white border-4 border-black shadow-[8px_8px_0px_#000000] p-6 text-center">
-              <p className="text-2xl font-black text-black tracking-tight">
-                No posts yet.
-              </p>
-            </div>
-          )}
-
+        {/* Posts Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sortedPosts.map((post, index) => (
             <motion.div
-              key={`${post.date}-${post.title}`}
+              key={post.id}
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: index * 0.15 }}
-              className="flex flex-col bg-white border-4 border-black shadow-[8px_8px_0px_#000000] p-6 space-y-4"
+              whileHover={{ y: -6 }}
+              className="flex flex-col bg-white border-4 border-black shadow-[8px_8px_0px_#000000] hover:shadow-[4px_4px_0px_#000000] transition-shadow overflow-hidden"
             >
-              <div>
-                <span className="bg-slate-100 text-black border-2 border-black font-bold text-xs px-2.5 py-0.5 shadow-[1px_1px_0px_#000]">
-                  {post.date}
-                </span>
-                <h3 className="text-2xl font-black text-black tracking-tight mt-3 mb-2">
-                  {post.title}
-                </h3>
-                {post.text && (
-                  <p className="text-gray-800 text-sm sm:text-base font-medium leading-relaxed">
-                    {post.text}
-                  </p>
-                )}
-              </div>
-
-              {post.link && (
-                <div className="pt-4 border-t-2 border-black">
-                  <a
-                    href={post.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 bg-[#ffc229] hover:bg-yellow-300 text-black font-extrabold text-base py-2.5 border-2 border-black shadow-[3px_3px_0px_#000000] hover:shadow-[1px_1px_0px_#000000] hover:translate-x-0.5 hover:translate-y-0.5 transition-all w-full"
-                  >
-                    Read Post
-                  </a>
+              {/* The whole tile is the link to the post */}
+              <Link to={`/logs/${post.id}`} className="flex flex-col flex-grow">
+                {/* Card Header */}
+                <div className="border-b-4 border-black bg-slate-100 px-6 py-3">
+                  <span className="bg-[#ffc229] text-black font-extrabold text-xs px-3 py-1 border-2 border-black shadow-[2px_2px_0px_#000]">
+                    {post.date}
+                  </span>
                 </div>
-              )}
+
+                {/* Card Body */}
+                <div className="p-6 flex flex-col flex-grow justify-between space-y-4">
+                  <div>
+                    <h3 className="text-2xl font-black text-black tracking-tight mb-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-800 text-sm sm:text-base font-medium leading-relaxed">
+                      {post.description}
+                    </p>
+                  </div>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {post.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="bg-slate-100 text-black border-2 border-black font-bold text-xs px-2.5 py-0.5 shadow-[1px_1px_0px_#000]"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>

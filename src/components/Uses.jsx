@@ -6,27 +6,96 @@ import { motion } from "framer-motion";
 export default function Uses() {
   const dotfiles = "https://github.com/nils-dambowy/dotfiles";
 
-  // Edit these lists to match your setup.
+  // Edit these lists to match your setup. "detail" is optional.
   const setup = [
     {
       category: "Hardware",
-      items: ["MacBook Air (Apple silicon)"],
+      items: [
+        { name: "MacBook Air (M1, 2020)", detail: "16 GB memory" },
+        { name: "KOORUI 27-inch 4K", detail: "external display" },
+        { name: "Logitech MX Keys", detail: "keyboard" },
+        { name: "Logitech MX Master 3", detail: "mouse" },
+        {
+          name: "VPS",
+          detail: "4 vCPUs and 8 GB memory, for this site and my own services",
+        },
+      ],
+    },
+    {
+      category: "Audio",
+      items: [
+        { name: "Yamaha HS5", detail: "studio monitors" },
+        {
+          name: "beyerdynamic DT 990 PRO",
+          detail: "open-back studio headphones",
+        },
+        { name: "AirPods Pro", detail: "wireless earbuds" },
+        { name: "PreSonus AudioBox USB 96", detail: "audio interface" },
+      ],
     },
     {
       category: "OS",
-      items: ["macOS", "Debian 13 on my server"],
+      items: [
+        { name: "macOS", detail: "kept on the latest release" },
+        { name: "Debian 13", detail: "on the server" },
+      ],
     },
     {
       category: "Editor",
-      items: ["Neovim with LazyVim", "Monokai Pro (classic) theme"],
+      items: [
+        {
+          name: "Neovim",
+          detail:
+            "with LazyVim as the base config and lazy.nvim managing plugins",
+        },
+        { name: "Monokai Pro (classic)", detail: "colour theme" },
+        {
+          name: "Language servers",
+          detail:
+            "gopls, Pyright and Ruff, terraform-ls, yaml-language-server, helm-ls, vtsls",
+        },
+        {
+          name: "Formatters and linters",
+          detail:
+            "gofumpt, goimports, golangci-lint, Prettier, ESLint, shfmt, hadolint, tflint",
+        },
+      ],
     },
     {
       category: "Terminal",
       items: [
-        "Ghostty",
-        "fish shell with zoxide",
-        "JetBrainsMono Nerd Font",
-        "lazygit",
+        { name: "Ghostty", detail: "terminal emulator" },
+        { name: "fish", detail: "shell" },
+        {
+          name: "zoxide",
+          detail: "jumps to a folder from a fragment of its name",
+        },
+        { name: "lazygit", detail: "Git without leaving the terminal" },
+        { name: "ripgrep, fd, fzf", detail: "searching files and text" },
+        { name: "JetBrainsMono Nerd Font", detail: "font" },
+        { name: "Homebrew", detail: "package manager" },
+      ],
+    },
+    {
+      category: "Infrastructure",
+      items: [
+        {
+          name: "kubectl, Helm, k3d",
+          detail: "working with Kubernetes and running local clusters",
+        },
+        { name: "Rancher Desktop", detail: "containers on the Mac" },
+        { name: "GitLab CI/CD", detail: "pipelines" },
+        { name: "ArgoCD and FluxCD", detail: "GitOps deployments" },
+        {
+          name: "Terraform and Ansible",
+          detail: "provisioning and configuration",
+        },
+        { name: "HashiCorp Vault", detail: "secrets" },
+        { name: "Caddy", detail: "serves this site with automatic HTTPS" },
+        {
+          name: "Self-hosted GitLab",
+          detail: "repositories and container registry",
+        },
       ],
     },
   ];
@@ -64,9 +133,14 @@ export default function Uses() {
               <h3 className="text-2xl font-black text-black tracking-tight mb-2">
                 {group.category}
               </h3>
-              <ul className="text-gray-800 text-sm sm:text-base font-medium leading-relaxed">
+              <ul className="text-gray-800 text-sm sm:text-base font-medium leading-relaxed space-y-1">
                 {group.items.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item.name}>
+                    <span className="font-extrabold text-black">
+                      {item.name}
+                    </span>
+                    {item.detail ? `: ${item.detail}` : ""}
+                  </li>
                 ))}
               </ul>
             </motion.div>

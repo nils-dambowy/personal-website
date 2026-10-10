@@ -12,7 +12,10 @@ import Project3 from "./components/Projects/Project3.jsx";
 import Project4 from "./components/Projects/Project4.jsx";
 import Project5 from "./components/Projects/Project5.jsx";
 import Project6 from "./components/Projects/Project6.jsx";
+
 import Logs from "./components/Logs.jsx";
+import Logs1 from "./components/Logs/Log1.jsx";
+
 import Uses from "./components/Uses.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -65,6 +68,10 @@ const router = createBrowserRouter([
   {
     path: "uses",
     element: <Uses />,
+  },
+  {
+    path: "logs/1",
+    element: <Logs1 />,
   },
 ]);
 
