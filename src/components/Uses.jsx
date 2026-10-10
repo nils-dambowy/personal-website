@@ -105,7 +105,7 @@ export default function Uses() {
       <ParticleBackground />
       <Header />
 
-      <main className="flex-grow py-12 px-4 max-w-4xl mx-auto w-full relative z-10">
+      <main className="flex-grow py-12 px-4 max-w-7xl mx-auto w-full relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-12">
           <motion.h1
@@ -121,7 +121,7 @@ export default function Uses() {
         </div>
 
         {/* Setup by category */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {setup.map((group, index) => (
             <motion.div
               key={group.category}

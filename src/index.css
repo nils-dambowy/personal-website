@@ -12,6 +12,12 @@ html {
   background-color: rgb(255, 194, 41);
 }
 
+@media (min-width: 1024px) {
+  html {
+    font-size: clamp(0.75em, 1.5vh, 1em);
+  }
+}
+
 .header-icons {
   background-color: rgb(255, 194, 41);
   width: 48px;

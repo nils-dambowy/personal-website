@@ -47,7 +47,8 @@ export default function ParticleBackground() {
         vx: (Math.random() - 0.5) * 0.4,
         vy: (Math.random() - 0.5) * 0.4,
         size: Math.random() * 8 + 6,
-        type: Math.random() > 0.5 ? "+" : Math.random() > 0.5 ? "square" : "circle",
+        type:
+          Math.random() > 0.5 ? "+" : Math.random() > 0.5 ? "square" : "circle",
         color: colors[Math.floor(Math.random() * colors.length)],
         rotation: Math.random() * Math.PI * 2,
         vRot: (Math.random() - 0.5) * 0.02,

@@ -41,7 +41,7 @@ export default function Profile() {
             className="mt-4 text-lg sm:text-2xl lg:text-3xl font-bold flex flex-wrap items-center justify-center gap-2"
           >
             <span className="bg-[#ffc229] border-2 border-black px-3 py-1 shadow-[2px_2px_0px_#000]">
-              Cloud Infrastructure &amp; DevOps @ HZD
+              Cloud Infrastructure &amp; DevOps
             </span>
             <span className="text-gray-700">@</span>
             <span className="bg-white border-2 border-black px-3 py-1 shadow-[2px_2px_0px_#000]">
