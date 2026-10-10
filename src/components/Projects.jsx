@@ -9,7 +9,8 @@ export default function Projects() {
     {
       id: "openbouldermap",
       title: "openbouldermap",
-      description: "A full-stack web application that lets users discover, map, and share bouldering spots worldwide!",
+      description:
+        "A full-stack web application that lets users discover, map, and share bouldering spots worldwide!",
       tags: ["React", "Full-Stack", "Maps", "Web"],
       github: "https://github.com/nils-dambowy/openbouldermap",
       image: Placeholder,
@@ -18,7 +19,8 @@ export default function Projects() {
     {
       id: "url_shortener",
       title: "URL Shortener",
-      description: "A fast, lightweight custom URL shortener service built for simplicity and efficiency.",
+      description:
+        "A fast, lightweight custom URL shortener service built for simplicity and efficiency.",
       tags: ["Python", "Backend", "API"],
       github: "https://github.com/nils-dambowy/url_shortener",
       image: Placeholder,
@@ -27,7 +29,8 @@ export default function Projects() {
     {
       id: "personal_website",
       title: "Personal Website",
-      description: "My personal portfolio website built with React, Vite, Framer Motion, and Tailwind CSS in Neo-Brutalist style.",
+      description:
+        "My personal portfolio website built with React, Vite, Framer Motion, and Tailwind CSS in Neo-Brutalist style.",
       tags: ["React", "Vite", "Tailwind", "Framer Motion"],
       github: "https://github.com/nils-dambowy/personal-website",
       image: Placeholder,
@@ -51,7 +54,8 @@ export default function Projects() {
             My Projects
           </motion.h1>
           <p className="mt-4 text-lg font-bold text-gray-900 max-w-lg mx-auto bg-white/80 border-2 border-black p-2 shadow-[3px_3px_0px_#000000]">
-            Explore open-source software, web tools, and experiments I&apos;ve built.
+            Explore open-source software, web tools, and experiments I&apos;ve
+            built.
           </p>
         </div>
 
@@ -64,7 +68,7 @@ export default function Projects() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: index * 0.15 }}
               whileHover={{ y: -6 }}
-              className="flex flex-col bg-white border-4 border-black shadow-[8px_8px_0px_#000000] hover:shadow-[4px_4px_0px_#000000] transition-all overflow-hidden"
+              className="flex flex-col bg-white border-4 border-black shadow-[8px_8px_0px_#000000] hover:shadow-[4px_4px_0px_#000000] transition-shadow cursor-default"
             >
               {/* Card Header & Preview Image */}
               <div className="relative border-b-4 border-black h-48 bg-slate-100 flex items-center justify-center p-4">
@@ -73,7 +77,9 @@ export default function Projects() {
                   alt={project.title}
                   className="max-h-full max-w-full object-contain filter drop-shadow-md"
                 />
-                <span className={`absolute top-3 left-3 ${project.accent} text-black font-extrabold text-xs px-3 py-1 border-2 border-black shadow-[2px_2px_0px_#000]`}>
+                <span
+                  className={`absolute top-3 left-3 ${project.accent} text-black font-extrabold text-xs px-3 py-1 border-2 border-black shadow-[2px_2px_0px_#000]`}
+                >
                   {project.title}
                 </span>
               </div>
