@@ -7,14 +7,14 @@ export default function About() {
   const technologies = [
     { name: "Kubernetes", color: "bg-blue-600 text-white" },
     { name: "Docker", color: "bg-sky-500 text-white" },
-    { name: "GitLab CI/CD", color: "bg-orange-600 text-white" },
-    { name: "Linux Systems", color: "bg-[#ffc229] text-black" },
-    { name: "Python", color: "bg-blue-500 text-white" },
-    { name: "Secrets & Security", color: "bg-purple-600 text-white" },
-    { name: "AI / PyTorch", color: "bg-red-500 text-white" },
-    { name: "ITIL & ITSM", color: "bg-emerald-600 text-white" },
+    { name: "Linux", color: "bg-orange-600 text-white" },
+    { name: "Terraform", color: "bg-[#ffc229] text-black" },
+    { name: "GitLab CI/CD", color: "bg-blue-500 text-white" },
+    { name: "Python & Bash", color: "bg-purple-600 text-white" },
+    { name: "ArgoCD & FluxCD", color: "bg-red-500 text-white" },
+    { name: "Go & C++", color: "bg-emerald-600 text-white" },
     { name: "ReactJS", color: "bg-cyan-400 text-black" },
-    { name: "C++", color: "bg-indigo-600 text-white" },
+    { name: "Vault & Secrets Management", color: "bg-indigo-600 text-white" },
   ];
 
   return (
@@ -35,7 +35,9 @@ export default function About() {
               <p className="bg-blue-700 text-white font-extrabold text-base lg:text-3xl px-3 py-0.5 border-2 border-black inline-block shadow-[2px_2px_0px_#000000]">
                 nils dambowy
               </p>
-              <span className="text-xs lg:text-base font-bold ml-2">(he/him)</span>
+              <span className="text-xs lg:text-base font-bold ml-2">
+                (he/him)
+              </span>
             </motion.div>
 
             <motion.div
@@ -45,9 +47,9 @@ export default function About() {
               className="text-center"
             >
               <p className="bg-[#ffc229] text-black font-extrabold text-base lg:text-3xl px-3 py-0.5 border-2 border-black inline-block shadow-[2px_2px_0px_#000000]">
-                cloud IT trainee
+                cloud infrastructure &amp; devops
               </p>
-              <span className="text-xs lg:text-base font-bold ml-2">hzd • tu darmstadt</span>
+              <span className="text-xs lg:text-base font-bold ml-2">hzd</span>
             </motion.div>
           </div>
         </div>
@@ -55,7 +57,6 @@ export default function About() {
         {/* Professional & Personal Sections */}
         <div className="personal w-full py-3 px-4 flex-grow flex items-center">
           <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-stretch justify-center gap-6 w-full">
-            
             {/* Professional Card */}
             <motion.div
               initial={{ x: -20, opacity: 0 }}
@@ -73,16 +74,18 @@ export default function About() {
               </div>
               <div className="p-4 text-xs lg:text-sm leading-relaxed space-y-2.5 font-medium text-gray-900">
                 <p>
-                  I am currently completing an intensive <strong>Cloud IT Trainee Program</strong> at the <strong>Hessische Zentrale für Datenverarbeitung (HZD)</strong>, specializing in cloud-native technologies and modern IT infrastructure.
+                  I engineer and automate cloud infrastructure. Currently,
+                  I&apos;m building resilient, automated systems at HZD,
+                  specializing in container orchestration (Kubernetes) and CI/CD
+                  pipelines (GitLab).
                 </p>
                 <p>
-                  My qualification covers hands-on cloud modules including <strong>Kubernetes, Docker, GitLab CI/CD, Secrets Management, Linux Administration, Python, Virtualization, ITIL/ITSM, and IT Security</strong>, alongside requirements & project management.
-                </p>
-                <p>
-                  Combined with my Bachelor&apos;s degree from Goethe University Frankfurt and Master&apos;s studies at TU Darmstadt, I am focused on building resilient, automated cloud infrastructure.
+                  My background bridges deep computer science theory with
+                  hands-on Linux administration and Software development.
                 </p>
                 <p className="bg-yellow-100 p-2 border-l-4 border-black font-semibold text-xs lg:text-sm">
-                  <span className="font-bold">Focus:</span> Cloud Architecture, Container Orchestration, DevOps Automation, and AI Integration.
+                  <span className="font-bold">Focus:</span> Removing friction
+                  between code and production.
                 </p>
               </div>
             </motion.div>
@@ -104,13 +107,13 @@ export default function About() {
               </div>
               <div className="p-4 text-xs lg:text-sm leading-relaxed space-y-2.5 font-medium text-gray-900">
                 <p>
-                  Outside of cloud engineering, I’m a passionate athlete. Whether it’s climbing, cycling, or running – I love staying active, clearing my mind, and sharing these experiences with others.
+                  When I&apos;m not in a terminal, I&apos;m usually outside. I
+                  boulder, cycle, and run long distances.
                 </p>
                 <p>
-                  I believe that activities like these are not just about fitness but about building connections — some of my best ideas and friendships have come while out on a run or tackling a bouldering problem together.
-                </p>
-                <p>
-                  I grew up in Bruchköbel, completed my studies in Frankfurt, and pursued my master&apos;s at TU Darmstadt. When I’m not working on cloud projects, you’ll find me planning trips, making music, or exploring niche tech topics.
+                  I grew up in Bruchköbel, studied in Frankfurt and Darmstadt,
+                  and spend my downtime planning trips, producing music, or
+                  falling down niche tech rabbit holes.
                 </p>
               </div>
             </motion.div>
@@ -120,7 +123,6 @@ export default function About() {
         {/* Technology Section */}
         <div className="tech bg-white border-t-2 border-b-2 border-black py-2 px-4">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-stretch border-2 border-black shadow-[5px_5px_0px_#000000] bg-white overflow-hidden">
-            
             {/* Seamless Full-Height Blue Sidebar */}
             <div className="bg-blue-600 text-white flex flex-col items-center justify-between p-3 border-b-2 md:border-b-0 md:border-r-2 border-black w-full md:w-1/4 text-center">
               <svg
@@ -134,7 +136,9 @@ export default function About() {
                   fill="currentColor"
                 />
               </svg>
-              <h2 className="text-xl lg:text-2xl font-black tracking-wider uppercase my-1">Cloud & Tech</h2>
+              <h2 className="text-xl lg:text-2xl font-black tracking-wider uppercase my-1">
+                Cloud & Tech
+              </h2>
               <svg
                 className="w-12 h-8 text-white opacity-80"
                 viewBox="0 0 350 175"
@@ -168,12 +172,15 @@ export default function About() {
                   whileHover={{ scale: 1.02, x: 2 }}
                   className="flex items-center p-2 border-2 border-black bg-slate-50 shadow-[2px_2px_0px_#000000] hover:shadow-[1px_1px_0px_#000000] transition-all cursor-default"
                 >
-                  <div className={`w-3.5 h-3.5 rounded-full border border-black mr-2.5 ${tech.color}`}></div>
-                  <span className="font-extrabold text-xs lg:text-base">{tech.name}</span>
+                  <div
+                    className={`w-3.5 h-3.5 rounded-full border border-black mr-2.5 ${tech.color}`}
+                  ></div>
+                  <span className="font-extrabold text-xs lg:text-base">
+                    {tech.name}
+                  </span>
                 </motion.div>
               ))}
             </div>
-
           </div>
         </div>
       </main>

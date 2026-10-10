@@ -48,6 +48,49 @@ export default function Header() {
       ),
     },
     {
+      name: "logs",
+      path: "/logs",
+      icon: (
+        <svg
+          stroke="currentColor"
+          fill="none"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-5 w-5 lg:h-7 lg:w-7"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line x1="8" x2="21" y1="6" y2="6"></line>
+          <line x1="8" x2="21" y1="12" y2="12"></line>
+          <line x1="8" x2="21" y1="18" y2="18"></line>
+          <line x1="3" x2="3.01" y1="6" y2="6"></line>
+          <line x1="3" x2="3.01" y1="12" y2="12"></line>
+          <line x1="3" x2="3.01" y1="18" y2="18"></line>
+        </svg>
+      ),
+    },
+    {
+      name: "uses",
+      path: "/uses",
+      icon: (
+        <svg
+          stroke="currentColor"
+          fill="none"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="h-5 w-5 lg:h-7 lg:w-7"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+          <line x1="8" x2="16" y1="21" y2="21"></line>
+          <line x1="12" x2="12" y1="17" y2="21"></line>
+        </svg>
+      ),
+    },
+    {
       name: "Contact",
       path: "/contact",
       icon: (

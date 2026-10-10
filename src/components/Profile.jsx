@@ -29,7 +29,9 @@ export default function Profile() {
             transition={{ delay: 0.2 }}
             className="font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-black"
           >
-            I&apos;m <span className="bg-blue-700 text-white px-3 py-1 inline-block border-2 border-black rotate-[-1deg] shadow-[3px_3px_0px_#000]">Nils Dambowy</span>
+            <span className="bg-blue-700 text-white px-3 py-1 inline-block border-2 border-black rotate-[-1deg] shadow-[3px_3px_0px_#000]">
+              Nils Dambowy
+            </span>
           </motion.h1>
 
           <motion.div
@@ -39,14 +41,14 @@ export default function Profile() {
             className="mt-4 text-lg sm:text-2xl lg:text-3xl font-bold flex flex-wrap items-center justify-center gap-2"
           >
             <span className="bg-[#ffc229] border-2 border-black px-3 py-1 shadow-[2px_2px_0px_#000]">
-              Cloud IT Trainee
+              Cloud Infrastructure &amp; DevOps @ HZD
             </span>
             <span className="text-gray-700">@</span>
             <span className="bg-white border-2 border-black px-3 py-1 shadow-[2px_2px_0px_#000]">
               HZD
             </span>
             <span className="text-gray-500 text-sm sm:text-lg font-semibold block w-full mt-1">
-              M.Sc. Computer Science Student @ TU Darmstadt
+              Building robust systems.
             </span>
           </motion.div>
 
@@ -56,7 +58,9 @@ export default function Profile() {
             transition={{ delay: 0.4 }}
             className="mt-4 text-sm sm:text-base lg:text-lg text-gray-800 leading-relaxed font-medium max-w-xl mx-auto"
           >
-            Specializing in Cloud Infrastructure, Container Orchestration (Kubernetes, Docker), DevOps (GitLab CI/CD), Linux Systems, and AI-driven solutions.
+            I engineer and automate cloud infrastructure. Currently, I&apos;m
+            building resilient, automated systems at HZD, specializing in
+            container orchestration (Kubernetes) and CI/CD pipelines (GitLab).
           </motion.p>
 
           {/* Action CTAs */}
